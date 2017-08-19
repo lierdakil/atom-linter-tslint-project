@@ -19,5 +19,9 @@
         "2.0.0": "provideLinter"
       }
     }
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.24",
+    "atom-haskell-tslint-rules": "latest"
   }
 }
