@@ -54,8 +54,7 @@ export function provideLinter(): Linter.StandardLinterV2 {
       return new Promise<Linter.V2Message[]>((resolve, reject) => {
         execFile(
           'node', [
-            tslintpath, '--project', `${projectpath}${sep}tsconfig.json`,
-            '--type-check', '--format', 'json',
+            tslintpath, '--project', `${projectpath}`, '--format', 'json',
           ],
           { cwd: projectpath, maxBuffer: Infinity },
           (error, stdout, stderr) => {
